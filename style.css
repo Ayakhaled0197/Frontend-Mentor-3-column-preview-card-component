@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    /* font-family: 'Big Shoulders Display', cursive;
+    font-family: 'Lexend Deca', sans-serif; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-size: 15px;
+
+}
+.wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    overflow: hidden; 
+}
+.content{
+    max-width: 980px;
+}
+
+.style{
+    padding: 70px;
+}
+.box1{
+    background-color:  hsl(31, 77%, 52%);
+}
+.box2{
+    background-color: hsl(184, 100%, 22%);
+}
+.box3{
+    background-color: hsl(179, 100%, 13%);
+}
+h1{
+    font-family: 'Big Shoulders Display', cursive;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+p{
+    font-family: 'Lexend Deca', sans-serif;
+    padding-bottom: 70px;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+.icon{
+    padding-top: 10px;
+}
+
+a{
+    font-family: 'Lexend Deca', sans-serif;
+    display: flex;
+    text-decoration: none;
+    background-color: hsl(0, 0%, 95%);
+    padding: 14px 20px;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    border: 1px solid  hsl(0, 0%, 95%);
+    transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+}
+a.btn1{
+    color:hsl(31, 77%, 52%);
+}
+a.btn2{
+    color:hsl(184, 100%, 22%)
+}
+a.btn3{
+    color:hsl(179, 100%, 13%)
+}
+a:hover{
+    background-color: transparent;
+    border: 1px solid   hsl(0, 0%, 95%);
+    color:  hsl(0, 0%, 95%);
+}
+@media  only screen and (max-width:1147px) {
+    .wrapper{
+        grid-template-columns: 1fr;
+        margin: 0 15rem;
+    }
+}
+@media only screen and (max-width:372px){
+    .wrapper{
+        margin: 3rem;
+    }
+}
+@media only screen and (max-width:800px){
+    .wrapper{
+        grid-template-columns: 1fr;
+        margin: 3rem 15rem;
+    }
+}
